@@ -1,0 +1,236 @@
+/*=== GERAL =================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --color-bg: hsl(300, 3%, 12%);
+    --headline: hsl(0, 0%, 99%);
+    --paragraph: hsl(210, 9%, 31%);
+
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+body {
+    background-image: url('../assets/logo.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    overflow: overlay;
+    background-color: var(--color-bg);
+    margin-top: 0;
+}
+
+.header {
+    display: flex;
+    margin-top: 0;
+}
+
+.logo{
+    padding: 10px 30px 10px 30px;
+}
+
+.wrapper {
+    width: 100vw;
+    max-width: 80rem;
+    margin: auto;
+}
+
+h1{
+    font-size: 3.4rem;
+    color: var(--headline);
+    line-height: 130%;
+    margin-bottom: 2.4rem;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--headline);
+    margin-bottom: 3.2rem;
+  }
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+form input, form select {
+    padding: 1.5rem 0.5rem 0.3rem!important;
+    border-radius: 5px!important;
+    background: #100f10!important;
+    font-size: 1.6rem!important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    border-color: #100f10;
+    height: 50px!important;
+    color: #fff!important;
+}
+
+.label-input {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    color: #aca9b3;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 15px;
+    padding: 0 10px;
+    height: 0;
+}
+
+
+input, select {
+    width: 100%; 
+    height: 6.2rem; 
+    border: 0.1rem solid rgb(125, 125, 125); 
+    margin-bottom: 1rem; 
+    padding: 0.1px 1.5rem; 
+    outline: none; 
+    border-radius: 2.5rem; 
+    font-size: 1.5rem; 
+    background: none; 
+    color: rgb(255, 255, 255);
+}
+
+.form-control {
+    background: transparent;
+    border: 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control small{
+    position: absolute;
+    bottom: 15px;
+    left: 10px; 
+    display: none;   
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control.error select{
+    border-color: #e74c3c;
+}
+
+.form-control.error small{
+    display: block;
+    color: #e74c3c;
+}
+
+.form-status span {
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1.5px solid #e74c3c;
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    display: none;
+}
+
+.form-status.error span {
+    display: inline-block;
+}
+
+.form-status.success span {
+    display: none;
+}
+
+
+form .botao {
+    background: rgb(207, 241, 107);
+  
+    border: none;
+    border-radius: 20rem;
+  
+    margin-bottom: 6rem;
+  
+    height: 6.2rem;
+    width: 26.3rem;
+  
+    color: #232f3e;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+  
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .form-status span {
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1.5px solid #e74c3c;
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    display: none;
+}
+
+.form-status.error span {
+    display: inline-block;
+}
+
+.form-status-escola span {
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1.5px solid #66e412;
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    display: none;
+}
+
+.form-status-submit span {  
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1.5px solid #66e412;
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    
+}
+
+.form-status-escola.success span {
+    display: inline-block;
+}
+
+
+.form-status.success span {
+    display: none;
+}
