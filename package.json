@@ -2,7 +2,7 @@
   "name": "node-js-getting-started",
   "version": "0.3.0",
   "description": "A sample Node.js app using Express 4",
-  "type" : "module",
+  "type": "module",
   "engines": {
     "node": "16.x"
   },
@@ -13,9 +13,11 @@
   },
   "dependencies": {
     "ejs": "^3.1.5",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "mongoose": "^6.3.6"
   },
   "devDependencies": {
+    "@types/node": "^17.0.42",
     "got": "^11.3.0",
     "tape": "^4.7.0"
   },
