@@ -4,9 +4,9 @@ class FormController {
 
     static listarCandidatos = (req,res) => {
         form.find()
-            .sort({nome: 1})            
+            .sort({created_at: 1})            
             .exec((err, form) => {
-            res.status(200).json(form);
+            res.status(200).json(form)
         })    
     }
 

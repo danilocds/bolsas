@@ -9,7 +9,5 @@ router
     .put("/escolas/:id", EscolaController.atualizarEscola)
     .delete("/escolas/:id", EscolaController.excluirEscola)
     .get("/diretores", EscolaController.listarDiretores)
-    
-
 
 export default router;
