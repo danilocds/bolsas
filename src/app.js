@@ -20,7 +20,9 @@ app
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-
+  .get('/obrigado', (req, res) => res.render('pages/obrigado'))
+  .use(express.json())
+  .use(express.urlencoded())
 
 // app.use(Express.json())
 // app.use(Express.urlencoded())

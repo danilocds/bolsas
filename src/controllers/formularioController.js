@@ -16,7 +16,7 @@ class FormController {
             if (err) {
                 res.status(500).send({message: `${err.message} - falha ao cadastrar a candidato`})
             } else {
-                res.status(201).redirect("obrigado.html");
+                res.status(201).redirect("obrigado");
             }
         })
     }
