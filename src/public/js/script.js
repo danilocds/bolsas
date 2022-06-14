@@ -31,9 +31,11 @@ function checkInputs() {
     let status = true;
 
     if (nomeValue === '') {
+        
         setErrorFor(nome, "O nome precisa ser informado");
         status = false;
     } else if (nomeValue.length < 5){ 
+        setErrorForSubmit();
         setErrorFor(nome, "O nome precisa conter no mínimo 5 caracteres");
         status = false;
     } 
@@ -92,10 +94,7 @@ function checkInputs() {
         setSuccessFor(cargo)        
     }
 
-    const formConstrols = form.querySelectorAll('.form-control')
-    const formIsValid = [...formConstrols].every( (formControl) => {
-        return (formControl.className === "form-control success");
-    });
+
     return status;
   
 }
@@ -107,6 +106,7 @@ function setErrorFor(input, message) {
     const small = formControl.querySelector('small');
     small.innerText = message;
     formControl.className = "form-control error";
+    mensagem.className = "form-status error";
 }
 
 function setErrorForSubmit() {

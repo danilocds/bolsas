@@ -9,7 +9,8 @@ const formSchema = new mongoose.Schema(
         redeTrabalho: {type: String, required: true},
         escola: { type: mongoose.Schema.Types.ObjectId, ref: 'escolas', required: true },        
         segmentoAtuacao: {type: String, required: true},
-        cargo: {type: String, required:true}
+        cargo: {type: String, required:true},
+        acessoLiberado: {type: Boolean}
     },
     {
         versionKey: false
