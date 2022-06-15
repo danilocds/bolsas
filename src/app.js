@@ -24,10 +24,6 @@ app
   .use(express.json())
   .use(express.urlencoded())
 
-// app.use(Express.json())
-// app.use(Express.urlencoded())
-// app.use(Express.static('public'));
-// app.use(cors());
 routes(app);
 
 export default app
